@@ -1,119 +1,81 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+/* A4 Page Setup */
+@page {
+    size: A4;
+    margin: 20mm;
 }
 
-body{
-    background:#e6e6e6;
-    padding:20px;
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.resume{
-    max-width:1100px;
-    margin:auto;
-    display:flex;
-    background:#fff;
+body {
+    background: #e6e6e6;
+    padding: 20px;
 }
 
-/* LEFT */
-.left{
-    width:30%;
-    background:#0a3f6b;
-    color:#fff;
+/* A4 Container */
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    background: #ffffff;
+    margin: auto;
+    padding: 20mm;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.left-header{
-    background:#08345a;
-    padding:25px;
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.left-header h1{
-    font-size:32px;
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
 }
 
-.left-header p{
-    font-size:18px;
+header .title {
+    font-size: 16px;
+    color: #555;
 }
 
-.left-section{
-    padding:20px 25px;
+/* Sections */
+section {
+    margin-bottom: 18px;
 }
 
-.left-section h3{
-    font-size:18px;
-    margin-bottom:10px;
-    border-bottom:1px solid rgba(255,255,255,0.3);
-    padding-bottom:5px;
+section h2 {
+    font-size: 18px;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
 }
 
-.left-section p{
-    font-size:14px;
-    line-height:1.6;
+section p, section li {
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-/* SKILL BARS */
-.bar{
-    background:rgba(255,255,255,0.3);
-    height:6px;
-    margin:6px 0 14px;
-    border-radius:4px;
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
 }
 
-.bar span{
-    display:block;
-    height:100%;
-    background:#fff;
-    border-radius:4px;
+table th, table td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
 }
 
-.p90{ width:90%; }
-.p80{ width:80%; }
-.p70{ width:70%; }
-.p65{ width:65%; }
-.p40{ width:40%; }
-
-/* RIGHT */
-.right{
-    width:70%;
-    padding:30px;
+table th {
+    background: #f0f0f0;
 }
 
-.summary{
-    font-size:14px;
-    line-height:1.7;
-    margin-bottom:20px;
-}
-
-.right h2{
-    color:#0a3f6b;
-    border-bottom:2px solid #ddd;
-    margin:25px 0 15px;
-    padding-bottom:5px;
-}
-
-.experience, .education, .certification{
-    display:flex;
-    margin-bottom:15px;
-}
-
-.date{
-    width:20%;
-    font-size:14px;
-    color:#666;
-}
-
-.details{
-    width:80%;
-    font-size:14px;
-}
-
-.details ul{
-    padding-left:18px;
-    margin-top:8px;
-}
-
-.details ul li{
-    line-height:1.6;
+/* Lists */
+ul {
+    padding-left: 20px;
 }
